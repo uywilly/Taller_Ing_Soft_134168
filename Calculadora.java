@@ -4,7 +4,14 @@ public class Calculadora{
 			try{
 				int op1 = Integer.parseInt(args[1]);
 				int op2 = Integer.parseInt(args[2]);
-				System.out.println(op1+op2);
+				
+				if("+".equals(args[0])){
+					System.out.println(op1+op2);
+				}else if("-".equals(args[0])){
+					System.out.println(op1-op2);
+				}
+					
+				
 			}
 			catch(Exception ex){
 				System.out.println("Params incorrectos");
@@ -14,6 +21,8 @@ public class Calculadora{
 			System.out.println("Uso: Calculadors operador");
 		}
 		
+		
 	}
+		
 
 }
